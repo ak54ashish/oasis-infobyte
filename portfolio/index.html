@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assests/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="leftnav">
+                Ashish's Portfolio
+            </div>
+
+            <div class="rightnav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home">
+            <div class="leftsection">
+                <span id="hi">Hi, my name is</span> <span class="name1">Ashish Kumar</span> 
+                
+                <div id="hi">and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="dev.png" alt="a vector img">
+            </div>
+        </section>
+        <hr>
+
+        <section class="about" id="about">
+            <div class="leftsect">
+                <h2>SKILLS</h2>
+                <div class="skill">
+                    <div class="htmllogo"><img src="htmllogo.png" alt="html logo"></div>
+                    <div class="csslogo"><img src="csslogo.png" alt="css logo"></div>
+                    <div class="jslogo"><img src="jslogo.png" alt="javascript logo"></div>
+                    <div class="c++logo"><img src="c++logo.png" alt="c++ logo"></div>
+                    <div class="cnvlogo"><img src="cnvlogo.png" alt="canva logo"></div>
+                </div>
+            </div>
+            <div>
+               I am a CSE student in <span class="name2">Amity University, Patna</span>.
+               I am also doing an internship in 'Web Development & Designing' by <span class="name2">Oasis Infobyte</span>. 
+            </div>
+        </section>
+        <hr>
+
+        <section class="projects" id="projects">
+            <h2>Some of my Recent Projects📝</h2>
+            <div class="projects-container">
+              <div class="project-card">
+                <h3 class="project-title">Landing Page</h3>
+                <p class="project-details">
+                  I made a <span class="blue">Landing Page</span> using <span class="blue">HTML</span> and <span class="blue">CSS</span>.
+                  It's about a fitness gym.
+                </p>
+              </div>
+
+              <div class="project-card">
+                <h3 class="project-title">AI ChatBot</h3>
+                <p class="project-details">
+                    I had the chance to create an <span class="blue">AI ChatBot</span> using <span class="blue">Python</span>.
+                    The ChatBot engages in dynamic conversations and provides tailored responses.
+                </p>
+              </div>
+
+              <div class="project-card">
+                <h3 class="project-title">Face Detection Tool</h3>
+                <p class="project-details">
+                    I made a <span class="blue">Face Detection Tool</span> using <span class="blue">Python</span>.
+                    This tool detects faces via camera and outlines them with a green square box.
+                </p>
+              </div>
+
+              <div class="project-card">
+                <h3 class="project-title">Image Recognition Tool</h3>
+                <p class="project-details">
+                    I had the chance to work on <span class="blue">Teachable Machine with Google</span> and create an <span class="blue">Image Recognition Tool</span> made with no code approach!
+                </p>
+              </div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="contact" id="contact">
+            <div class="contact-heading">
+              <h2>Contact Me💬</h2>
+              <p>Feel free to get in touch with me. I'd love to hear from you!</p>
+            </div>
+            <div class="contact-form">
+              <form action="#" method="post">
+                <div class="form-group">
+                  <label for="name">Your Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Message:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="button">Send! 📩</button>
+                </div>
+              </form>
+            </div>
+        </section>
+          <hr>
+        <div class="socials">
+            <a href="https://www.instagram.com/ashish_____k20" target="_blank">
+                <img
+                    src="instagramicon.png"
+                    alt="Instagram"
+                    loading="lazy"
+                    class="socicon"/>
+            </a>
+            <a href="linkedin.com/in/ashish-kumar-235749282" target="_blank">
+                <img
+                    src="linkedinicon.png"
+                    alt="Linkedin"
+                    loading="lazy"
+                    class="socicon"/>
+            </a>
+            <a href="https://www.github.com/ashishkumar" target="_blank">
+                <img 
+                    src="githubicon.png" 
+                    alt="Github" 
+                    loading="lazy"
+                    class="socicon"/>
+            </a>
+        </div>
+        
+        <i class="scroll-up" id="scroll-up">
+            <img
+                src="toplogo.png"
+                class="socicon up-arrow"
+                alt="scroll-up"/>
+        </i>
+
+    </main>
+
+    <footer>
+        <div>&copy; Ashish Kumar. All rights reserved.</div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Designer', 'Graphic Designer','Web Developer !'],
+          typeSpeed: 60,
+        });
+      </script>
+
+</body>
+</html>
